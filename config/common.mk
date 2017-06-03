@@ -198,6 +198,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Magisk Manager
+ PRODUCT_PACKAGES += \
+     MagiskManager
+ 
+ # Copy Magisk zip
+ PRODUCT_COPY_FILES += \
+     vendor/cm/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
+ 
+ 	
+	
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
